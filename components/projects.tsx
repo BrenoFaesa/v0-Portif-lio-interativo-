@@ -11,7 +11,7 @@ export function Projects() {
     {
       title: "Portfólio Interativo",
       description: "Meu portfólio online para apresentar minhas habilidades, experiências e projetos.",
-      image: "/interactive-portfolio-website-design.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-E8994l6nSqgMdBhXqu4G57oG2JAoIL.png",
       technologies: ["Next.js", "TypeScript", "Vercel"],
       liveUrl: "https://v0-interactive-portfolio-jdkjgel33-breno110604-2586s-projects.vercel.app",
       featured: true,
@@ -19,7 +19,7 @@ export function Projects() {
     {
       title: "Adivinha Cores",
       description: "Jogo interativo desenvolvido para testar e aprimorar o reconhecimento de cores.",
-      image: "/local-ecommerce-website-design.jpg",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qDjQjVy0UvddCsHWnPT8BOp3NMVMfR.png",
       technologies: ["HTML", "CSS", "JavaScript"],
       liveUrl: "https://brenofaesa.github.io/adivinhacores",
       featured: true,
@@ -27,7 +27,7 @@ export function Projects() {
     {
       title: "Trabalho Todo API",
       description: "Projeto em grupo para gerenciamento de tarefas por meio de uma API.",
-      image: "/academic-management-system-dashboard.jpg",
+      image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       technologies: ["Java", "API", "GitHub"],
       githubUrl: "https://github.com/Rhyan-Java/Trabalho-todo-api-c2.git",
       featured: false,
@@ -35,7 +35,7 @@ export function Projects() {
     {
       title: "Sistema de Biblioteca",
       description: "Projeto em grupo para gerenciamento de livros e operações de uma biblioteca.",
-      image: "/financial-control-mobile-app-interface.jpg",
+      image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
       technologies: ["Java", "GitHub"],
       githubUrl: "https://github.com/AndreRibeiroRodrigues/Sistema-de-Biblioteca.git",
       featured: false,
