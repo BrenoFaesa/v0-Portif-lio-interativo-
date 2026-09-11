@@ -2,7 +2,7 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Database, Globe, Palette, Zap } from "lucide-react"
+import { Code, Zap } from "lucide-react"
 
 export function Skills() {
   const skillCategories = [
@@ -10,31 +10,13 @@ export function Skills() {
       icon: Code,
       title: "Desenvolvimento",
       description: "Linguagens e frameworks para desenvolvimento",
-      skills: ["JavaScript", "TypeScript", "React", "Next.js", "Node.js", "Python"],
-    },
-    {
-      icon: Globe,
-      title: "Web Technologies",
-      description: "Tecnologias para desenvolvimento web",
-      skills: ["HTML5", "CSS3", "Tailwind CSS", "REST APIs", "GraphQL", "Webpack"],
-    },
-    {
-      icon: Database,
-      title: "Banco de Dados",
-      description: "Sistemas de gerenciamento de dados",
-      skills: ["MySQL", "PostgreSQL", "MongoDB", "Firebase", "Supabase", "Prisma"],
-    },
-    {
-      icon: Palette,
-      title: "Design & UX",
-      description: "Ferramentas de design e experiência do usuário",
-      skills: ["Figma", "Adobe XD", "UI/UX Design", "Prototyping", "User Research"],
+      skills: ["javascript", "node.js", "python", "mySQL", "Node.js"],
     },
     {
       icon: Zap,
       title: "Ferramentas",
-      description: "Produtividade e desenvolvimento",
-      skills: ["Git", "Docker", "VS Code", "Postman", "Vercel", "AWS"],
+      description: "Ferramentas que utilizo no desenvolvimento",
+      skills: ["github", "vscode", "vercel"],
     },
   ]
 

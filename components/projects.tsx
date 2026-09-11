@@ -3,46 +3,41 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
-import { ExternalLink, Github, Code } from "lucide-react"
+import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 
 export function Projects() {
   const projects = [
     {
-      title: "Sistema de Gestão Acadêmica",
-      description:
-        "Plataforma completa para gerenciamento de notas, frequência e comunicação entre alunos e professores.",
-      image: "/academic-management-system-dashboard.jpg",
-      technologies: ["React", "Node.js", "PostgreSQL", "Express"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Portfólio Interativo",
+      description: "Meu portfólio online para apresentar minhas habilidades, experiências e projetos.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-E8994l6nSqgMdBhXqu4G57oG2JAoIL.png",
+      technologies: ["Next.js", "TypeScript", "Vercel"],
+      liveUrl: "https://v0-interactive-portfolio-jdkjgel33-breno110604-2586s-projects.vercel.app",
       featured: true,
     },
     {
-      title: "App de Controle Financeiro",
-      description: "Aplicativo mobile para controle de gastos pessoais com gráficos e relatórios detalhados.",
-      image: "/financial-control-mobile-app-interface.jpg",
-      technologies: ["React Native", "Firebase", "Chart.js"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Adivinha Cores",
+      description: "Jogo interativo desenvolvido para testar e aprimorar o reconhecimento de cores.",
+      image: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qDjQjVy0UvddCsHWnPT8BOp3NMVMfR.png",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveUrl: "https://brenofaesa.github.io/adivinhacores",
       featured: true,
     },
     {
-      title: "E-commerce Local",
-      description: "Loja virtual para pequenos comerciantes locais com sistema de pagamento integrado.",
-      image: "/local-ecommerce-website-design.jpg",
-      technologies: ["Next.js", "Stripe", "MongoDB", "Tailwind"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Trabalho Todo API",
+      description: "Projeto em grupo para gerenciamento de tarefas por meio de uma API.",
+      image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      technologies: ["Java", "API", "GitHub"],
+      githubUrl: "https://github.com/Rhyan-Java/Trabalho-todo-api-c2.git",
       featured: false,
     },
     {
-      title: "Portfolio Interativo",
-      description: "Site pessoal com animações e design responsivo para apresentação profissional.",
-      image: "/interactive-portfolio-website-design.jpg",
-      technologies: ["Next.js", "Framer Motion", "TypeScript"],
-      githubUrl: "#",
-      liveUrl: "#",
+      title: "Sistema de Biblioteca",
+      description: "Projeto em grupo para gerenciamento de livros e operações de uma biblioteca.",
+      image: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+      technologies: ["Java", "GitHub"],
+      githubUrl: "https://github.com/AndreRibeiroRodrigues/Sistema-de-Biblioteca.git",
       featured: false,
     },
   ]
@@ -91,26 +86,28 @@ export function Projects() {
                 </div>
 
                 <div className="flex gap-3">
-                  <Button size="sm" variant="outline" className="group/btn bg-transparent">
-                    <Github className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
-                    Código
-                  </Button>
-                  <Button size="sm" className="group/btn">
-                    <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
-                    Ver Projeto
-                  </Button>
+                  {project.githubUrl && (
+                    <Button asChild size="sm" variant="outline" className="group/btn bg-transparent">
+                      <a href={project.githubUrl} target="_blank" rel="noreferrer">
+                        <Github className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                        Código
+                      </a>
+                    </Button>
+                  )}
+                  {project.liveUrl && (
+                    <Button asChild size="sm" className="group/btn">
+                      <a href={project.liveUrl} target="_blank" rel="noreferrer">
+                        <ExternalLink className="mr-2 h-4 w-4 group-hover/btn:scale-110 transition-transform" />
+                        Ver Projeto
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
           ))}
         </div>
 
-        <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="group bg-transparent">
-            <Code className="mr-2 h-4 w-4 group-hover:scale-110 transition-transform" />
-            Ver Todos os Projetos
-          </Button>
-        </div>
       </div>
     </section>
   )
